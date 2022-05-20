@@ -37,14 +37,14 @@ public class Ejercicios {
         if (diaSem==1 || diaSem==7) {
             System.out.println("Es fin de semana: " +mensaje);
 
-        } else {
+        }else if (diaSem==0 || diaSem>=8){
+            System.out.println("Error: " +mensaje);   
+        }else {
             System.out.println("Ese día toca el curso de: " +mensaje);
-             
-        }
         
 
     }
-
+    }
     public static void main(String[] args) {
         
         mostrarcursoDia();
